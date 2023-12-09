@@ -30,7 +30,7 @@ test:
 get:
 	go get
 
-build:
+build: get
 	CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -v -ldflags "-X="github.com/sergeypashkov/kbot/cmd.appVersion=${VERSION}
 
 image:
