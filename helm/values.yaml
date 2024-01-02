@@ -3,14 +3,12 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
-
 image:
   repository: sergeypashkov
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.0.7-4fee5d0"
+  tag: "v1.0.7-4583095"
   arch: amd64
-
 secret:
   name: "kbot"
   tokenKey: "token"
