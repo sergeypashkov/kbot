@@ -7,7 +7,7 @@ image:
   repository: ghcr.io/sergeypashkov
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.0.7-9872da1"
+  tag: "v1.0.7-a4b0184"
   arch: amd64
 secret:
   name: "kbot"
