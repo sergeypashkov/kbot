@@ -7,8 +7,8 @@ else
 endif
 
 APP=$(shell basename $(shell git remote get-url origin))
-REGISTRY=ghcr.io/sergeypashkov
-#REGISTRY=sergeypashkov
+#REGISTRY=ghcr.io/sergeypashkov
+REGISTRY=sergeypashkov
 #REGISTRY=us-central1-docker.pkg.dev/k8s-k3s-406919/demo
 VERSION=$(shell git describe --tags --abbrev=0)-$(shell git rev-parse --short HEAD)
 
