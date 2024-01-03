@@ -4,7 +4,7 @@
 
 replicaCount: 1
 image:
-  repository: sergeypashkov
+  repository: ghcr.io/sergeypashkov
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v1.0.7-16e658e"
