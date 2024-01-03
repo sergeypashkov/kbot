@@ -20,11 +20,18 @@ jobs:
 
             - name: Run test
               run: make test
+            
+            - name: GitHub login
+              uses: docker/login-action@v2
+              with:
+                registry: ghcr.io
+                username: ${{ github.actor }}
+                password: ${{ secrets.GITHUB_TOKEN }} 
 
             - name: Build&Push
               env:
                 APP: "kbot"
-                REGISTRY: ghcr.io/${{ vars.GITHUB_REPOSITORY_OWNER }}
+                REGISTRY: ghcr.io/${{ github.actor }}
               run: make image push
 
     cd:
