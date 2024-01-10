@@ -7,7 +7,7 @@ image:
   repository: ghcr.io/sergeypashkov
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.0.7-d9c81cd"
+  tag: "v1.0.7-35ffc54"
   arch: amd64
   os: linux
 secret:
