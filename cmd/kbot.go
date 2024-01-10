@@ -52,6 +52,9 @@ to quickly create a Cobra application.`,
 
 			case "help":
 				err = m.Send( fmt.Sprintf("Kbot %s is here to help you!", appVersion ) )
+
+			case "date":
+				err = m.Send( fmt.Sprintf("Current date is %s", currentTime.Format("01-02-2006") ) )
 				
 			}
 
